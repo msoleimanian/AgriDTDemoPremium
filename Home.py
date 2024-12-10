@@ -1,6 +1,21 @@
 import streamlit as st
 
-
+st.sidebar.title("👤 User Information")
+st.sidebar.markdown("""
+    <style>
+        .sidebar-text {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #4A4A4A;
+        }
+    </style>
+    <div class="sidebar-text">
+        Name: <span style="color: #1F77B4;">Mohsen</span><br>
+        Role: <span style="color: #1F77B4;">Scientist</span><br>
+        Edition: <span style="color: #1F77B4;">Professional Edition</span>
+    </div>
+""", unsafe_allow_html=True)
 
 html_content = f"""
                                 <div style="border: 2px solid #333333; padding:10px; border-radius:5px;">
